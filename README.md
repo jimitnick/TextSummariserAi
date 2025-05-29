@@ -2,6 +2,8 @@
 
 TextSummariserAi is a web-based application that combines text summarization and conversational AI capabilities. Built using React and Vite, it provides users with tools to generate concise summaries of large texts and engage in AI-driven conversations.
 
+> ⚠️ **Important**: Please ensure you add your own Firebase authentication keys and Gemini API keys in the appropriate configuration files before running the application.
+
 ## 🚀 Features
 
 * **Text Summarization**: Automatically generate summaries from lengthy articles or documents.
