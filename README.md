@@ -90,5 +90,5 @@ This project is licensed under the [MIT License](LICENSE).
 * [Tailwind CSS](https://tailwindcss.com/) or [CSS Modules](https://github.com/css-modules/css-modules)
 
 ## 📬 Contact
-
+Expecting feedbacks and suggestions to improve the project
 For any inquiries or feedback, please reach out to [abhijith091006@gmail.com](mailto:abhijith091006@gmail.com).
