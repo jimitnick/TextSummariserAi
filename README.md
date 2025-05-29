@@ -1,4 +1,4 @@
-# Text Summariser AI
+# Text Summariser AI & Chat App
 
 TextSummariserAi is a web-based application that combines text summarization and conversational AI capabilities. Built using React and Vite, it provides users with tools to generate concise summaries of large texts and engage in AI-driven conversations.
 
