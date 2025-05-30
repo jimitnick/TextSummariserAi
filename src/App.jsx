@@ -40,7 +40,7 @@ function App() {
   return (
     <>
       <div className='main w-screen h-screen flex justify-center flex-col items-center gap-4'>
-        <Navbar displayName = {user.displayName}/>        
+        <Navbar displayName = {user.displayName} profilePicture = {user.photoURL}/>        
         <div className='flex flex-col w-[80%] h-[calc(100vh-80px)] bg-zinc-800 items-center p-4 gap-4'>
           <div className='w-full overflow-y-auto scroll-smooth h-[calc(100%-65px)] rounded-xl clear-both flex flex-col gap-3 '>
             {/* <div className='w-1/2 h-fit bg-red-500 flex-shrink-0 self-end text-left p-4 flex items-center'>{userPrompt}</div>

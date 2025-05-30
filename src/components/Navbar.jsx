@@ -21,7 +21,13 @@ const Navbar = (props) => {
 
   return (
     <div className='navbar flex w-[80%] rounded-2xl shadow-sm border-white shadow-white h-[80px] justify-between items-center p-5'>
-      <h1 className='text-white text-2xl'>Hi 👋, {props.displayName}</h1>
+      <div className='flex gap-4'>
+        <div className='h-[30px] w-[30px] rounded-full object-cover'>
+          <img src={props.profilePicture} alt=""/>
+        </div>
+        <h1 className='text-white text-2xl'>Hi 👋, {props.displayName}</h1>
+      </div>
+      
       <div>
         <button
           className='text-black bg-white px-4 py-3 rounded-xl cursor-pointer hover:bg-zinc-800 hover:text-white hover:border-1 hover:border-white transition ease-in-out'
