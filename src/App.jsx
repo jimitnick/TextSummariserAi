@@ -41,13 +41,13 @@ function App() {
     <>
       <div className='main w-screen h-screen flex justify-center flex-col items-center gap-4'>
         <Navbar displayName = {user.displayName} profilePicture = {user.photoURL}/>        
-        <div className='flex flex-col w-[80%] h-[calc(100vh-80px)] bg-zinc-800 items-center p-4 gap-4'>
+        <div className='flex flex-col w-[95%] md:w-[80%] h-[calc(100vh-80px)] bg-zinc-800 items-center p-4 gap-4'>
           <div className='w-full overflow-y-auto scroll-smooth h-[calc(100%-65px)] rounded-xl clear-both flex flex-col gap-3 '>
             {/* <div className='w-1/2 h-fit bg-red-500 flex-shrink-0 self-end text-left p-4 flex items-center'>{userPrompt}</div>
             <div className='w-full h-fit bg-red-500 flex-shrink-0 self-start text-left p-6 flex items-center'>{aiMessage}</div> */}
             <div className={`intro ${display ? "flex" : "hidden"} justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2`}>
-              <h1 className='text-white xl:text-4xl'>Welcome back 😊, {user.displayName}
-                <br /><p className='text-white text-center xl:text-2xl'>How can I help you today ?</p>
+              <h1 className='text-white text-lg xl:text-4xl'>Welcome back 😊,<br /> <span className='text-center'>{user.displayName}</span>
+                <br /><p className='text-white text-center text-sm xl:text-xl'>How can I help you today ?</p>
               </h1>
             </div>
             {
