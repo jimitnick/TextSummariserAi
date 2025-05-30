@@ -34,7 +34,7 @@ const LoginForm = () => {
 
   return (
     <div className='h-screen w-screen flex justify-center items-center'>
-        <div className="w-full max-w-sm bg-zinc-800 p-6 rounded-lg shadow-md h-[500px] flex flex-col justify-center gap-16">
+        <div className="md:w-full max-w-sm bg-zinc-800 p-6 rounded-lg shadow-md  md:h-[500px] flex flex-col justify-center gap-16">
         <h1 className="text-2xl font-semibold text-white mb-6 text-center">Login</h1>
         <div className="flex mb-4 justify-center gap-4">
           <button

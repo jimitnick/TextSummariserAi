@@ -46,8 +46,8 @@ function App() {
             {/* <div className='w-1/2 h-fit bg-red-500 flex-shrink-0 self-end text-left p-4 flex items-center'>{userPrompt}</div>
             <div className='w-full h-fit bg-red-500 flex-shrink-0 self-start text-left p-6 flex items-center'>{aiMessage}</div> */}
             <div className={`intro ${display ? "flex" : "hidden"} justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2`}>
-              <h1 className='text-white text-4xl'>Welcome back 😊, {user.displayName}
-                <br /><p className='text-white text-center text-2xl'>How can I help you today ?</p>
+              <h1 className='text-white xl:text-4xl'>Welcome back 😊, {user.displayName}
+                <br /><p className='text-white text-center xl:text-2xl'>How can I help you today ?</p>
               </h1>
             </div>
             {
