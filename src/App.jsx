@@ -10,6 +10,9 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import SideBar from './components/SideBar';
 import { Bars2Icon } from '@heroicons/react/24/outline';
+import remarkGfm from 'remark-gfm';
+import rehypeHighlight from 'rehype-highlight';
+import 'highlight.js/styles/github-dark.css';
 
 function App() {
   const navigate = useNavigate();
@@ -56,7 +59,11 @@ function App() {
               {
                 chatHistory.map((msg,index) => (
                   <div key={index} className={`w-${msg.sender === "user" ? "1/2 self-end p-4 justify-end bg-zinc-700 rounded-xl" : "full self-start p-6 text-left"} h-fit flex-shrink-0  flex flex-col items-center text-white whitespace-pre-wrap`}>
-                    <ReactMarkdown>{msg.message}</ReactMarkdown>
+                    <ReactMarkdown
+                      children={msg.message}
+                      remarkPlugins={[remarkGfm]}
+                      rehypePlugins={[rehypeHighlight]}
+                    />
                   </div>
                 ))
               }
