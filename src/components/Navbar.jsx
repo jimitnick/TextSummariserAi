@@ -20,7 +20,8 @@ const Navbar = (props) => {
   };
 
   return (
-    <div className='navbar flex w-[95%] md:w-[80%] rounded-2xl shadow-sm border-white shadow-white h-[80px] justify-between items-center p-5'>
+    <div className='navbar flex w-[100%] md:w-full rounded-2xl shadow-sm border-white shadow-white h-[80px] justify-between items-center p-5'>
+      
       <div className='flex gap-4 items-center'>
         <div className='h-[30px] w-[30px] rounded-full object-cover'>
           <img src={props.profilePicture} alt=""/>
