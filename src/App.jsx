@@ -58,7 +58,7 @@ function App() {
               </div>
               {
                 chatHistory.map((msg,index) => (
-                  <div key={index} className={`w-${msg.sender === "user" ? "1/2 self-end p-4 justify-end bg-zinc-700 rounded-xl" : "full self-start p-6 text-left"} h-fit flex-shrink-0  flex flex-col items-center text-white whitespace-pre-wrap`}>
+                  <div key={index} className={`w-${msg.sender === "user" ? "1/2 self-end p-4 justify-end bg-zinc-700 rounded-xl" : "full self-start p-6 text-left"} h-fit flex-shrink-0  flex flex-col gap-3 text-white whitespace-pre-wrap`}>
                     <ReactMarkdown
                       children={msg.message}
                       remarkPlugins={[remarkGfm]}
