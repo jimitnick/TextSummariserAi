@@ -78,7 +78,11 @@ TextSummariserAi/
 ### Login Page
 ![image](https://github.com/user-attachments/assets/2ab005a2-c735-4354-9c79-5f9b0e91e16b)
 ### Dashboard Page
-![image](https://github.com/user-attachments/assets/2432795b-8e3c-4e00-b4e8-4cd4f3a29974)
+
+
+https://github.com/user-attachments/assets/f9bf7b47-f1cf-43af-9d3b-d3daa51da38e
+
+
 
 
 ## 📄 License
