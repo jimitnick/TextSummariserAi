@@ -8,7 +8,6 @@ function GoogleLogin() {
     try {
       const result = await signInWithPopup(auth, googleProvider);
       const user = result.user;
-      console.log("User info:", user);
       alert(`Welcome, ${user.displayName}`);
       navigate("/dashboard");
     } catch (err) {

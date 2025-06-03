@@ -22,7 +22,6 @@ function App() {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         setUserdets(user);
-        console.log("User is signed in:", user);
         navigate("/dashboard");
       } else {
         console.log("User is signed out.");
