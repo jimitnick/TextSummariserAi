@@ -24,7 +24,6 @@ function App() {
         setUserdets(user);
         navigate("/dashboard");
       } else {
-        console.log("User is signed out.");
         navigate("/");
       }
     });
