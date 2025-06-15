@@ -37,7 +37,7 @@ const LoginForm = () => {
     <div className={`h-screen w-screen flex justify-center items-center`}>
       <img src={loginBackground} alt="" className='h-full w-full object-cover absolute z-0'/>
       <div className='w-full h-full backdrop-blur-[6px] absolute'></div>
-        <div className="md:w-full max-w-sm bg-zinc-800 p-6 rounded-lg shadow-md  md:h-[500px] flex flex-col justify-center gap-16 z-1">
+        <div className="md:w-full max-w-sm bg-[rgb(218,218,218,0.5)] shadow-white  p-6 rounded-lg shadow-lg  md:h-[500px] flex flex-col justify-center gap-16 z-1">
         <h1 className="text-2xl font-semibold text-white mb-6 text-center">Login</h1>
         <div className="flex mb-4 justify-center gap-4">
           <button
