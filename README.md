@@ -63,16 +63,19 @@ TextSummariserAi/
 ## 🤖 Usage
 
 1. **Text Summarization**:
-
-   * Navigate to the "Summarize" section.
+   
    * Paste or upload the text you want to summarize.
    * Click on the "Summarize" button to generate a concise summary.
 
-2. **Chat AI**:
+3. **PDF Summarization**:
 
-   * Go to the "Chat" section.
+   * Click on the Upload icon and choose the PDF file you have to analyse
+   * Click on the "Analyse PDF" button to generate a concise summary of the given PDF.
+
+4. **Chat AI**:
+
    * Type your message in the input field.
-   * Press "Enter" or click "Send" to interact with the AI chatbot.
+   * Press "Enter" to interact with the AI chatbot.
 
 ## 📸 Screenshots
 ### Login Page
