@@ -13,11 +13,20 @@ import { Bars2Icon } from '@heroicons/react/24/outline';
 import remarkGfm from 'remark-gfm';
 import rehypeHighlight from 'rehype-highlight';
 import 'highlight.js/styles/github-dark.css';
+import analysePDF from './utils/analysePDF';
 
 function App() {
   const navigate = useNavigate();
   const [user, setUserdets] = useState({});
   const [display, setDisplay] = useState(true);
+  const [file, setFile] = useState(null);
+  const handlePDF = async () => {
+    const response = await analysePDF(file);
+    const aiMessage = { sender: "ai", message: response }
+    setChatHistory((prev) =>
+      prev.slice(0, -1).concat(aiMessage)
+    );
+  }
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -70,8 +79,16 @@ function App() {
             <div className='flex w-full gap-4 p-2 bg-[#222] rounded-lg h-[65px]'>
               <div className='fileinputArea w-[5%]  rounded-sm flex items-center justify-center p-3 cursor-pointer hover:bg-[#3e3e3e]'>
                 <label htmlFor="file" className='cursor-pointer'><PlusCircleIcon className="size-7 text-white" /></label>
-                <input type="file" name="file" id="file" className='text-white w-[50%]' hidden/>
+                <input type="file" name="file" id="file" className='text-white w-[50%]' hidden onChange={(e) => {
+                  setFile(e.target.files[0])
+                }}/>
               </div>
+              <button className='text-white border cursor-pointer' onClick={() => {
+                const userMessage = {sender: "user",message:"File uploaded Please analyse it"};
+                setChatHistory(prev => [...prev, userMessage]);
+                setDisplay(false)
+                handlePDF();
+              }}>Analyse PDF</button>
               <div className='textinputArea w-[95%] flex justify-center '>
                 <textarea name="textInput" id="textInput" className='w-full rounded-md  text-white  outline-none min-h-10 resize-none px-4 py-1 focus:bg-[#3e3e3e] hover:bg-[#3e3e3e]' value={prompt} placeholder='Enter your prompt here ....' onChange={(e)=>{
                   setPrompt(e.target.value);
